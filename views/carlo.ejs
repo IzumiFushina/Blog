@@ -1,0 +1,109 @@
+<!-- carlo.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Meu Blog</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1em;
+    }
+
+    nav {
+      background-color: #555;
+      padding: 1em;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 0.5em 1em;
+      margin: 0 1em;
+    }
+
+    section {
+      padding: 1em;
+      margin: 1em;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    form {
+      margin-top: 1em;
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-bottom: 0.5em;
+    }
+
+    input, textarea {
+      padding: 0.5em;
+      margin-bottom: 1em;
+    }
+
+    button {
+      padding: 0.5em;
+      background-color: #333;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1em;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Meu Blog</h1>
+  </header>
+
+  <nav>
+    <a href="/suzy">Home</a>
+    <a href="/caim">Sobre</a>
+    <a href="/abel">Contato</a>
+    <a href="/carlo">Login</a>
+    <a href="/cadastro">Cadastro</a>
+  </nav>
+
+  <section>
+    <h2>Login</h2>
+    <form method="post">
+      <label for="username">Nome de Usuário:</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="password">Senha:</label>
+      <input type="password" id="password" name="password" required>
+
+      <button type="submit">Entrar</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2024 Meu Blog. Todos os direitos reservados.
+  </footer>
+
+</body>
+</html>

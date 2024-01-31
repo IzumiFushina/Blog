@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Blog</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1em;
+    }
+
+    nav {
+      background-color: #555;
+      padding: 1em;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 0.5em 1em;
+      margin: 0 1em;
+    }
+
+    section {
+      padding: 1em;
+      margin: 1em;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .comments {
+      margin-top: 1em;
+      padding: 1em;
+      background-color: #f0f0f0;
+      border-radius: 8px;
+    }
+
+    form {
+      margin-top: 1em;
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-bottom: 0.5em;
+    }
+
+    input, textarea {
+      padding: 0.5em;
+      margin-bottom: 1em;
+    }
+
+    button {
+      padding: 0.5em;
+      background-color: #333;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1em;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Meu Blog</h1>
+  </header>
+
+  <nav>
+    <nav>
+        <a href="suzy.html">Home</a>
+        <a href="caim.html">Sobre</a>
+        <a href="abel.html">Contato</a>
+        <a href="carlo.html">Login</a> <!-- Adicionando o link para a página de login -->
+      </nav>
+  </nav>
+
+  <section>
+    <h2>Título do Artigo</h2>
+    <p>Conteúdo do artigo...</p>
+
+    <div class="comments">
+      <h3>Comentários</h3>
+      <!-- Aqui você pode exibir os comentários dinamicamente usando um backend -->
+      <div>
+        <strong>Usuário1:</strong>
+        <p>Comentário 1...</p>
+      </div>
+      <div>
+        <strong>Usuário2:</strong>
+        <p>Comentário 2...</p>
+      </div>
+    </div>
+
+    <form>
+      <h3>Deixe seu Comentário</h3>
+      <label for="username">Nome de Usuário:</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="comment">Comentário:</label>
+      <textarea id="comment" name="comment" rows="4" required></textarea>
+
+      <button type="submit">Enviar Comentário</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2024 Meu Blog. Todos os direitos reservados.
+  </footer>
+
+</body>
+</html>

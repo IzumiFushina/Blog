@@ -1,0 +1,162 @@
+<!-- suzy.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Blog</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1em;
+    }
+
+    nav {
+      background-color: #555;
+      padding: 1em;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 0.5em 1em;
+      margin: 0 1em;
+    }
+
+    section {
+      padding: 1em;
+      margin: 1em;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    form {
+      margin-top: 1em;
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-bottom: 0.5em;
+    }
+
+    input, textarea {
+      padding: 0.5em;
+      margin-bottom: 1em;
+    }
+
+    button {
+      padding: 0.5em;
+      background-color: #333;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1em;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Meu Blog</h1>
+  </header>
+
+  <nav>
+    <a href="/suzy">Home</a>
+    <a href="/caim">Sobre</a>
+    <a href="/abel">Contato</a>
+    <a href="/carlo">Login</a>
+    <a href="/cadastro">Cadastro</a>
+  </nav>
+
+  <section>
+    <h2>Título do Artigo 1</h2>
+    <p>Conteúdo do artigo 1...</p>
+
+    <div class="comments">
+      <h3>Comentários</h3>
+      <%= exibirComentarios(comments1) %>
+    </div>
+    
+    <!-- Adicione este formulário para enviar comentários -->
+    <form method="post" action="/suzy/comentarios">
+      <label for="usuario1">Usuário:</label>
+      <input type="text" id="usuario1" name="usuario" required>
+    
+      <label for="texto1">Comentário:</label>
+      <textarea id="texto1" name="texto" required></textarea>
+    
+      <button type="submit">Enviar Comentário</button>
+    </form>
+
+  </section>
+
+  <section>
+    <h2>Título do Artigo 2</h2>
+    <p>Conteúdo do artigo 2...</p>
+
+    <div class="comments">
+      <h3>Comentários</h3>
+      <%= exibirComentarios(comments2) %>
+    </div>
+    
+    <!-- Adicione este formulário para enviar comentários -->
+    <form method="post" action="/suzy/comentarios">
+      <label for="usuario2">Usuário:</label>
+      <input type="text" id="usuario2" name="usuario" required>
+    
+      <label for="texto2">Comentário:</label>
+      <textarea id="texto2" name="texto" required></textarea>
+    
+      <button type="submit">Enviar Comentário</button>
+    </form>
+
+  </section>
+
+  <section>
+    <h2>Título do Artigo 3</h2>
+    <p>Conteúdo do artigo 3...</p>
+
+    <div class="comments">
+      <h3>Comentários</h3>
+      <%= exibirComentarios(comments3) %>
+    </div>
+    
+    <!-- Adicione este formulário para enviar comentários -->
+    <form method="post" action="/suzy/comentarios">
+      <label for="usuario3">Usuário:</label>
+      <input type="text" id="usuario3" name="usuario" required>
+    
+      <label for="texto3">Comentário:</label>
+      <textarea id="texto3" name="texto" required></textarea>
+    
+      <button type="submit">Enviar Comentário</button>
+    </form>
+
+  </section>
+
+  <footer>
+    &copy; 2024 Meu Blog. Todos os direitos reservados.
+  </footer>
+
+</body>
+</html>
